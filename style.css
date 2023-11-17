@@ -78,7 +78,7 @@ body {
   flex-direction: row;
 }
 
-.flex-column {
+.flex-colm {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -93,10 +93,12 @@ body {
   align-items: center;
   background-color: white;
   /* position: sticky; */
-  position: relative;
-  z-index: 1;
+  position: sticky;
+  /* z-index: 1; */
   top: 0;
-
+  z-index: 1;
+  width: 100%;
+  flex-wrap: wrap;
   /* Because we want header to be sticky later */
   height: 8rem;
   padding: 0 4.8rem;
@@ -108,7 +110,7 @@ body {
 }
 
 .logo {
-  height: 2.2rem;
+  height: 3.2rem;
 }
 
 /**************************/
@@ -129,7 +131,6 @@ body {
   color: #333;
   font-weight: 500;
   font-size: 1.8rem;
-  transition: all 0.3s;
 }
 
 .main-nav-link:hover,
@@ -145,7 +146,7 @@ body {
   border-radius: 9px;
   color: #fff;
   background-image: linear-gradient(45deg, #00dfe5, #5f3bee);
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.2);
 }
 
 .main-nav-link.nav-cta:hover,
@@ -165,7 +166,7 @@ body {
   display: grid;
   place-items: center;
   margin: 0;
-  padding: 10rem;
+  padding: 20rem 12rem;
   gap: 3.2rem;
   background-color: #f5fcff;
   /* padding: 4.8rem 0 9.6rem 0; */
@@ -209,13 +210,16 @@ strong {
 /* skill */
 /**************************/
 /* heading skil */
+.section-skil{
+  padding: 8rem 12rem 10rem 12rem;
+}
+
 .container-heading-skil {
   text-align: center;
 }
 
 .text-skil {
   font-size: 1.8rem;
-  padding-top: 6.2rem;
 }
 .heading-skil {
   font-size: 4.8rem;
@@ -230,7 +234,7 @@ strong {
 /*? card */
 
 .main-card {
-  padding: 0 0 12.8rem 0;
+  padding: 3.8rem 0 12.0rem 0;
 }
 
 .img-card {
@@ -271,4 +275,122 @@ strong {
   font-size: 1rem;
   line-height: 1.2rem;
   word-spacing: 0.2rem;
+}
+
+/**************************/
+/* portfolio */
+/**************************/
+
+.main-portfolio{
+  padding: 8rem 0;
+}
+
+.card-ff-container {
+  background-color: #f5fcff;
+  width: 32rem;
+  /* untuk card */
+  height: 39rem; 
+  border-radius: 1.2rem;
+  padding: 0 0 2.4rem 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.img-ff img {
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+  height: 18rem;
+}
+
+.text-ff {
+  padding: 1.8rem;
+}
+
+.heading-ff {
+  font-size: 1.7rem;
+}
+
+.p-card-ff {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  word-spacing: 0.2rem;
+}
+
+.-ff- {
+  padding-top: 1.2rem;
+}
+
+.-fff- {
+  padding-bottom: 2rem;
+}
+
+/* button */
+.button-ff {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.button-ff:link,
+.button-ff:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.button-ff:hover,
+.button-ff:active {
+  background: linear-gradient(45deg, #00dfe5, #5f3beebe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button-ff.nav-ff:link,
+.button-ff.nav-ff:visited {
+  padding: 0.8rem 0.8rem;
+  border-radius: 5px;
+  color: #fff;
+  background-image: linear-gradient(45deg, #00dfe5, #5f3bee);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.2);
+}
+
+.button-ff.nav-ff:hover,
+.button-ff.nav-ff:active {
+  background-image: linear-gradient(45deg, #00dde5b9, #5f3beebe);
+}
+/**************************/
+/* footer */
+/**************************/
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  /* position: sticky; */
+  position: relative;
+
+  /* Because we want header to be sticky later */
+  height: 8rem;
+  padding: 0 4.8rem;
+  background-color: #f5fcff;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 2.4rem;
+  margin: 3.2rem;
+}
+
+.icon-footer {
+  width: 3.2rem;
+  height: 3.2rem;
 }
