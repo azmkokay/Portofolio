@@ -76,6 +76,14 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.colmn-row {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
 }
 
 .flex-colm {
@@ -84,7 +92,7 @@ body {
   flex-direction: column;
 }
 /**************************/
-/* HEADER */
+/* Navbar */
 /**************************/
 
 .header {
@@ -93,7 +101,7 @@ body {
   align-items: center;
   background-color: white;
   /* position: sticky; */
-  position: sticky;
+  position: fixed;
   /* z-index: 1; */
   top: 0;
   z-index: 1;
@@ -114,7 +122,7 @@ body {
 }
 
 /**************************/
-/* NAVIGATION */
+/* button */
 /**************************/
 
 .main-nav-list {
@@ -166,7 +174,7 @@ body {
   display: grid;
   place-items: center;
   margin: 0;
-  padding: 20rem 12rem;
+  padding: 25rem 12rem;
   gap: 3.2rem;
   background-color: #f5fcff;
   /* padding: 4.8rem 0 9.6rem 0; */
@@ -191,6 +199,10 @@ body {
   width: 70rem;
 }
 
+.heroright img {
+  width: 100%;
+}
+
 strong {
   background: linear-gradient(45deg, #00dfe5, #5f3beebe);
   -webkit-background-clip: text;
@@ -210,7 +222,7 @@ strong {
 /* skill */
 /**************************/
 /* heading skil */
-.section-skil{
+.section-skil {
   padding: 8rem 12rem 10rem 12rem;
 }
 
@@ -234,7 +246,7 @@ strong {
 /*? card */
 
 .main-card {
-  padding: 3.8rem 0 12.0rem 0;
+  padding: 3.8rem 0 12rem 0;
 }
 
 .img-card {
@@ -281,7 +293,7 @@ strong {
 /* portfolio */
 /**************************/
 
-.main-portfolio{
+.main-portfolio {
   padding: 8rem 0;
 }
 
@@ -289,7 +301,7 @@ strong {
   background-color: #f5fcff;
   width: 32rem;
   /* untuk card */
-  height: 39rem; 
+  height: 39rem;
   border-radius: 1.2rem;
   padding: 0 0 2.4rem 0;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.15);
@@ -301,6 +313,10 @@ strong {
   height: auto;
   border-radius: inherit;
   height: 18rem;
+}
+
+.main-card-ff {
+  padding: 3.8rem 25rem 12rem 25rem;
 }
 
 .text-ff {
