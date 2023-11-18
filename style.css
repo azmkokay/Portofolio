@@ -38,6 +38,7 @@ body {
 
 .undecor {
   list-style: none;
+  text-decoration: none;
 }
 
 .container {
@@ -82,8 +83,8 @@ body {
 .colmn-row {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3.2rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 6.4rem;
 }
 
 .flex-colm {
@@ -94,6 +95,9 @@ body {
 /**************************/
 /* Navbar */
 /**************************/
+.logo{
+  font-size: 2.4rem;
+}
 
 .header {
   display: flex;
@@ -167,7 +171,7 @@ body {
 }
 
 /**************************/
-/* hero */
+/*! hero */
 /**************************/
 
 .hero {
@@ -195,12 +199,12 @@ body {
   overflow: hidden;
   background-repeat: no-repeat;
   border-radius: 12px;
-  height: 50rem;
-  width: 70rem;
+  max-height: 50rem;
+  max-width: 70rem;
 }
 
 .heroright img {
-  width: 100%;
+  max-width: 100%;
 }
 
 strong {
@@ -223,7 +227,7 @@ strong {
 /**************************/
 /* heading skil */
 .section-skil {
-  padding: 8rem 12rem 10rem 12rem;
+  padding: 8rem 0 3.2rem 0;
 }
 
 .container-heading-skil {
@@ -316,7 +320,9 @@ strong {
 }
 
 .main-card-ff {
-  padding: 3.8rem 25rem 12rem 25rem;
+  padding: 3.8rem auto 12rem auto;
+  /* margin: 0 auto; */
+  /* padding: 0 100rem; */
 }
 
 .text-ff {
@@ -410,3 +416,90 @@ strong {
   width: 3.2rem;
   height: 3.2rem;
 }
+
+/****************************************************************************************/
+@media screen and (max-width:34em){
+.logo {
+  display: none;
+}
+.btn-header{
+  display: none;
+}
+
+/* .main-nav-link{
+  font-size: 1.2rem;
+} */
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 8rem 2rem 3rem 2rem;
+    /* gap: 3.2rem; */
+    background-color: #f5fcff;
+    /* padding: 4.8rem 0 9.6rem 0; */
+  }
+  
+  .heroleft p {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    word-spacing: 0.2rem;
+  }
+  
+  .heroleft h1 {
+    font-size: 3.2rem;
+    padding: 1.2rem 0 3.2rem 0;
+  }
+  
+  .heroright {
+    margin-top: 4.8rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    height: 28rem;
+    width: 40rem;
+  }
+  
+  .heroright img {
+    max-width: 100%;
+  }
+  
+  strong {
+    background: linear-gradient(45deg, #00dfe5, #5f3beebe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .btn-hero {
+    margin-top: 3.2rem;
+  }
+  
+  .flex-row {
+    gap: 3.2rem;
+    padding: 3.2rem;
+  }
+
+/**************************/
+/* skill */
+/**************************/
+/* heading skil */
+.section-skil {
+  padding: 8rem 0 10rem 0;
+}
+
+/*? card */
+
+.main-card {
+  padding: 1.2rem 0 0 0;
+}
+
+.grid--2--cols-reverse{
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+/***************/
+
+
