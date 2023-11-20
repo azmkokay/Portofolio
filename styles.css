@@ -120,7 +120,7 @@ body {
   display: grid;
   place-items: center;
   /* margin: 0; */
-  padding: 25rem 12rem;
+  padding: 23rem 15rem 15rem 15rem;
   gap: 3.2rem;
   background-color: #f5fcff;
   grid-template-columns: repeat(2, 1fr);
@@ -161,7 +161,7 @@ strong {
 /**************************/
 /* heading skil */
 .section-skil {
-  padding: 8rem 0 3.2rem 0;
+  padding: 15rem 0 15rem 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -169,6 +169,7 @@ strong {
 
 .container-heading-skil {
   margin: 0 auto;
+  padding: 0 0 2.4rem 0;
 }
 
 .text-skil {
@@ -243,18 +244,23 @@ strong {
   display: grid;
   place-items: center;
   /* margin: 0; */
-  padding: 25rem 12rem;
+  padding: 15rem;
   gap: 3.2rem;
   background-color: #f5fcff;
   grid-template-columns: repeat(2, 1fr);
   /* padding: 4.8rem 0 9.6rem 0; */
 }
 
-.about-me-text p {
-  font-size: 1.8rem;
-  line-height: 2.4rem;
-  word-spacing: 0.2rem;
+
+.about-me-text p:nth-child(2) {
+  padding-top: 1.2rem;
 }
+
+.about-me-text p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    word-spacing: 0.2rem;
+  }
 
 .about-me-text h1 {
   font-size: 6.4rem;
@@ -273,7 +279,7 @@ strong {
 /*! portfolio */
 /**************************/
 .section-portfolio {
-  padding: 8rem 0 3.2rem 0;
+  padding: 15rem 0 15rem 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -281,12 +287,13 @@ strong {
 
 .container-heading-portfolio {
   margin: 0 auto;
+  padding: 0 0 2.4rem 0;
 }
 
-.text-portfolio {
-  text-align: center;
-  font-size: 1.2rem;
+.text-portfolio{
+    text-align: center;
 }
+
 .heading-portfolio {
   font-size: 4.8rem;
   margin: 0 auto;
